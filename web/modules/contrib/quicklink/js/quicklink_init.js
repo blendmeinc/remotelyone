@@ -76,7 +76,7 @@
         }
 
         quicklinkConfig.ignores.push(function(uri, elem) {
-          var ruleName = 'Contains prefetch attribute.';
+          var ruleName = 'Contains noprefetch attribute.';
           var ruleFunc = elem.hasAttribute('noprefetch');
 
           outputDebugInfo(ruleFunc, ruleName, uri, elem);

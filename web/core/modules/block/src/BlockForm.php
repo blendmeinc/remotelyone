@@ -269,8 +269,6 @@ class BlockForm extends EntityForm {
     if (isset($form['user_role'])) {
       $form['user_role']['#title'] = $this->t('Roles');
       unset($form['user_role']['roles']['#description']);
-      $form['user_role']['negate']['#type'] = 'value';
-      $form['user_role']['negate']['#value'] = $form['user_role']['negate']['#default_value'];
     }
     if (isset($form['request_path'])) {
       $form['request_path']['#title'] = $this->t('Pages');

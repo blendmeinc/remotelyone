@@ -1,0 +1,6 @@
+name: remotelyone
+recipe: pantheon
+config:
+  framework: drupal8
+  site: remotelyone
+  id: 7db05b93-1329-4d51-ae24-70aa4b302843

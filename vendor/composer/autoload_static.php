@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitdaca28f89d2c603362912e75c2c41209
+class ComposerStaticInit500e93f3d0d7201cea7cfb44d714055b
 {
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
@@ -12,8 +12,8 @@ class ComposerStaticInitdaca28f89d2c603362912e75c2c41209
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'cf97c57bfe0f23854afd2f3818abb7a0' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/create_uploaded_file.php',
@@ -152,6 +152,7 @@ class ComposerStaticInitdaca28f89d2c603362912e75c2c41209
         ),
         'B' => 
         array (
+            'Brumann\\Polyfill\\' => 17,
             'Behat\\Mink\\Driver\\' => 18,
             'Behat\\Mink\\' => 11,
         ),
@@ -453,11 +454,15 @@ class ComposerStaticInitdaca28f89d2c603362912e75c2c41209
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
+        'Brumann\\Polyfill\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/brumann/polyfill-unserialize/src',
+        ),
         'Behat\\Mink\\Driver\\' => 
         array (
             0 => __DIR__ . '/..' . '/behat/mink-browserkit-driver/src',
-            1 => __DIR__ . '/..' . '/behat/mink-selenium2-driver/src',
-            2 => __DIR__ . '/..' . '/behat/mink-goutte-driver/src',
+            1 => __DIR__ . '/..' . '/behat/mink-goutte-driver/src',
+            2 => __DIR__ . '/..' . '/behat/mink-selenium2-driver/src',
         ),
         'Behat\\Mink\\' => 
         array (
@@ -1256,6 +1261,7 @@ class ComposerStaticInitdaca28f89d2c603362912e75c2c41209
         'Behat\\Testwork\\Translator\\ServiceContainer\\TranslatorExtension' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Translator/ServiceContainer/TranslatorExtension.php',
         'Behat\\Transliterator\\SyncTool' => __DIR__ . '/..' . '/behat/transliterator/src/Behat/Transliterator/SyncTool.php',
         'Behat\\Transliterator\\Transliterator' => __DIR__ . '/..' . '/behat/transliterator/src/Behat/Transliterator/Transliterator.php',
+        'Brumann\\Polyfill\\Unserialize' => __DIR__ . '/..' . '/brumann/polyfill-unserialize/src/Unserialize.php',
         'Composer\\Installers\\AglInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AglInstaller.php',
         'Composer\\Installers\\AimeosInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AimeosInstaller.php',
         'Composer\\Installers\\AnnotateCmsInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AnnotateCmsInstaller.php',
@@ -6029,11 +6035,24 @@ class ComposerStaticInitdaca28f89d2c603362912e75c2c41209
         'Symfony\\Polyfill\\Php70\\Php70' => __DIR__ . '/..' . '/symfony/polyfill-php70/Php70.php',
         'TYPO3\\PharStreamWrapper\\Assertable' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Assertable.php',
         'TYPO3\\PharStreamWrapper\\Behavior' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Behavior.php',
+        'TYPO3\\PharStreamWrapper\\Collectable' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Collectable.php',
         'TYPO3\\PharStreamWrapper\\Exception' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Exception.php',
         'TYPO3\\PharStreamWrapper\\Helper' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Helper.php',
+        'TYPO3\\PharStreamWrapper\\Interceptor\\ConjunctionInterceptor' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Interceptor/ConjunctionInterceptor.php',
         'TYPO3\\PharStreamWrapper\\Interceptor\\PharExtensionInterceptor' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Interceptor/PharExtensionInterceptor.php',
+        'TYPO3\\PharStreamWrapper\\Interceptor\\PharMetaDataInterceptor' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Interceptor/PharMetaDataInterceptor.php',
         'TYPO3\\PharStreamWrapper\\Manager' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Manager.php',
         'TYPO3\\PharStreamWrapper\\PharStreamWrapper' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/PharStreamWrapper.php',
+        'TYPO3\\PharStreamWrapper\\Phar\\Container' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Phar/Container.php',
+        'TYPO3\\PharStreamWrapper\\Phar\\DeserializationException' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Phar/DeserializationException.php',
+        'TYPO3\\PharStreamWrapper\\Phar\\Manifest' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Phar/Manifest.php',
+        'TYPO3\\PharStreamWrapper\\Phar\\Reader' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Phar/Reader.php',
+        'TYPO3\\PharStreamWrapper\\Phar\\ReaderException' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Phar/ReaderException.php',
+        'TYPO3\\PharStreamWrapper\\Phar\\Stub' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Phar/Stub.php',
+        'TYPO3\\PharStreamWrapper\\Resolvable' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Resolvable.php',
+        'TYPO3\\PharStreamWrapper\\Resolver\\PharInvocation' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Resolver/PharInvocation.php',
+        'TYPO3\\PharStreamWrapper\\Resolver\\PharInvocationCollection' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Resolver/PharInvocationCollection.php',
+        'TYPO3\\PharStreamWrapper\\Resolver\\PharInvocationResolver' => __DIR__ . '/..' . '/typo3/phar-stream-wrapper/src/Resolver/PharInvocationResolver.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'Twig\\Cache\\CacheInterface' => __DIR__ . '/..' . '/twig/twig/src/Cache/CacheInterface.php',
         'Twig\\Cache\\FilesystemCache' => __DIR__ . '/..' . '/twig/twig/src/Cache/FilesystemCache.php',
@@ -6815,10 +6834,10 @@ class ComposerStaticInitdaca28f89d2c603362912e75c2c41209
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitdaca28f89d2c603362912e75c2c41209::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitdaca28f89d2c603362912e75c2c41209::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitdaca28f89d2c603362912e75c2c41209::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitdaca28f89d2c603362912e75c2c41209::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit500e93f3d0d7201cea7cfb44d714055b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit500e93f3d0d7201cea7cfb44d714055b::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit500e93f3d0d7201cea7cfb44d714055b::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit500e93f3d0d7201cea7cfb44d714055b::$classMap;
 
         }, null, ClassLoader::class);
     }
