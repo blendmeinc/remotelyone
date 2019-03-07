@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Orbit pattern, utlizing Zurb's Orbit Component.
+ */
+#}
+
+
+<div class="row">
+  
+
+  <ul class="card-container">
+  
+    <!--Each Cardlisting -->
+    {% for cardlisting in cardlisting %}
+    <li class="card-item medium-6 columns">
+    	<div class="card-content">
+    	<h5><a href="{{ cardlisting.url }}">{{ cardlisting.title }}</a></h5>
+        <p>{{ cardlisting.subtitle }}</p>
+        </div>
+    </li>
+    {% endfor %}
+
+  </ul> 
+</div>
+
+
+
+
+
+
+    
+
+
+
+
+
+

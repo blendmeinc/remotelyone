@@ -1,0 +1,41 @@
+uuid: aabbb9eb-6240-4f52-a387-cba4b71047e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - block_visibility_groups
+    - node
+    - system
+  theme:
+    - fuse
+_core:
+  default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
+id: fuse_tools
+theme: fuse
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

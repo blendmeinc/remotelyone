@@ -1,0 +1,36 @@
+card:
+  label: Card 
+  description:  A card component.
+  fields:
+    header:
+      type: text
+      label:  Header
+      description: Header Title Such as Category or Featured Item
+      preview: Teaching And Learning
+    image:
+      type: pattern
+      label: Card Image
+      description: Card Image.
+      preview:
+        theme: image
+        uri: http://lorempixel.com/1200/675/city
+        width: 400
+        attributes: {}
+    title:
+      type: text
+      label: Title
+      description: The title of the featured block
+      preview: Another Noteworhty News Item
+    body:
+      type: text
+      label: Body
+      description: Body.
+      preview: 
+        type: processed_text
+        text: Grow transition cross-platform reinvent leverage podcasting action-items synergies e-commerce disintermediate. Initiatives e-enable; relationships holistic, unleash disintermediate bricks-and-clicks, customized systems recontextualize drive dot-com, embedded engage. Next-generation integrate paradigms channels channels widgets mesh niches synergize.
+        format: basic_html
+    url:
+      type: text
+      label: URL
+      description: The button URL
+      preview: http://google.com

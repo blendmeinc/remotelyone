@@ -1,0 +1,9 @@
+// Non-modular or client styles for the .l-content region.
+
+.node--type-landing-page {
+    .block-fuse-page-title, 
+    .block-fuse-breadcrumbs {
+        text-indent: -5000px;
+        position: absolute;;
+    }
+}

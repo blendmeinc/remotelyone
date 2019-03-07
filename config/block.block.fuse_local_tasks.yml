@@ -1,0 +1,22 @@
+uuid: 491173bb-ef7e-4b12-8e65-03dbb6fae542
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fuse
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: fuse_local_tasks
+theme: fuse
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: df6d1ea3-2ca5-430b-9780-5f492bd3a128
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fuse
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: fuse_messages
+theme: fuse
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

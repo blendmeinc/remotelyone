@@ -1,0 +1,7 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/fuse.css: {}
+  js:
+    js/fuse.js: {}

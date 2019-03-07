@@ -1,0 +1,41 @@
+uuid: 351a3406-c4a2-4238-aa01-fff7996ce157
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - block_visibility_groups
+    - node
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
+id: bartik_tools
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

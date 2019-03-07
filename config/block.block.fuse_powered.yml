@@ -1,0 +1,22 @@
+uuid: 88ab7e5e-8b30-4869-8be8-96e16408b790
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fuse
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: fuse_powered
+theme: fuse
+region: footer_last
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
