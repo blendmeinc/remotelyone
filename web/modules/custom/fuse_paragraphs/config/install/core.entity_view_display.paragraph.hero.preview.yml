@@ -1,0 +1,54 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.hero.field_hero_image
+    - field.field.paragraph.hero.field_hero_link
+    - field.field.paragraph.hero.field_hero_subheader
+    - field.field.paragraph.hero.field_hero_title
+    - paragraphs.paragraphs_type.hero
+  module:
+    - image
+    - link
+id: paragraph.hero.preview
+targetEntityType: paragraph
+bundle: hero
+mode: preview
+content:
+  field_hero_image:
+    type: image_url
+    weight: 3
+    region: background_url
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+  field_hero_link:
+    type: link_separate
+    weight: 2
+    region: button
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_hero_subheader:
+    type: basic_string
+    weight: 1
+    region: subheader
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_hero_title:
+    type: string
+    weight: 0
+    region: title
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

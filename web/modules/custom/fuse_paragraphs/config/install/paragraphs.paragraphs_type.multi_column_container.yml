@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: multi_column_container
+label: 'Multi Column Container'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

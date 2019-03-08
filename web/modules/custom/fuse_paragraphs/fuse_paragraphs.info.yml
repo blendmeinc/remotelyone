@@ -1,0 +1,20 @@
+name: 'Fuse Paragraphs'
+description: 'Fuse Paragraph types. '
+type: module
+core: 8.x
+dependencies:
+  - datetime
+  - entity_reference_revisions
+  - field
+  - file
+  - image
+  - link
+  - options
+  - paragraphs
+  - taxonomy
+  - text
+  - user
+  - video_embed_field
+  - views
+version: 8.x-1.0
+package: fuse
