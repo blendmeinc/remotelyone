@@ -1,0 +1,11 @@
+uuid: 98e763e9-894e-4215-aead-ce274c65ab34
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RbmuDCzW2h9hSz_fPl1wBYQ5vrXuMYSgH_Jf2WLFrlo
+id: jumbotron
+label: Jumbotron
+icon_uuid: null
+description: null
+behavior_plugins: {  }

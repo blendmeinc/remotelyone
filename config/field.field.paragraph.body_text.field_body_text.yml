@@ -1,0 +1,24 @@
+uuid: 2f04c307-6cff-4a2c-81de-1ca061a3debc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_text
+    - paragraphs.paragraphs_type.body_text
+  module:
+    - text
+_core:
+  default_config_hash: UJ1Cb8HNAZHiNI-5oP-3BbGpcl09VG_0LT58lH7Kzr4
+id: paragraph.body_text.field_body_text
+field_name: field_body_text
+entity_type: paragraph
+bundle: body_text
+label: 'Body Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

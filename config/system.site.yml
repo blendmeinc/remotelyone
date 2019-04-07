@@ -1,11 +1,11 @@
 uuid: 4b862d11-36d2-4216-a1bc-f9d58247baed
 name: 'Remotely One'
 mail: kaleemclarkson@gmail.com
-slogan: ''
+slogan: 'The Relationship Community for Location Independent Professionals'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/3
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

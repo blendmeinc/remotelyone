@@ -1,0 +1,21 @@
+uuid: 51af3d3d-7f27-4ab5-b9a8-cf6b1d28d7a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_jumbotron_cta
+    - paragraphs.paragraphs_type.jumbotron
+_core:
+  default_config_hash: jh85s2DWcz2rAt3rHQbMoef2wFh5a42q5B5WXYCuenY
+id: paragraph.jumbotron.field_jumbotron_cta
+field_name: field_jumbotron_cta
+entity_type: paragraph
+bundle: jumbotron
+label: 'Jumbotron Call to Action'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

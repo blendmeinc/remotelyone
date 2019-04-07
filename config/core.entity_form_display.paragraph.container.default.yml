@@ -1,0 +1,32 @@
+uuid: 9bb6895c-0675-4ccb-a74e-8219e570f4b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.container.field_paragraph_reference
+    - paragraphs.paragraphs_type.container
+  module:
+    - paragraphs
+_core:
+  default_config_hash: JjXt1bixe_fzxzgoeJOF4tf8zgmRhKeJ0zIX0_DJHk0
+id: paragraph.container.default
+targetEntityType: paragraph
+bundle: container
+mode: default
+content:
+  field_paragraph_reference:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

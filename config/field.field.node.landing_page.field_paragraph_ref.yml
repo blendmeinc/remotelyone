@@ -1,0 +1,53 @@
+uuid: ff454149-57e8-4813-af98-c44ceb222f36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_ref
+    - node.type.landing_page
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_paragraph_ref
+field_name: field_paragraph_ref
+entity_type: node
+bundle: landing_page
+label: 'Paragraph Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      body_text:
+        weight: 10
+        enabled: false
+      container:
+        weight: 11
+        enabled: false
+      featured_content:
+        weight: 12
+        enabled: false
+      file:
+        weight: 13
+        enabled: false
+      hero:
+        weight: 14
+        enabled: false
+      image:
+        weight: 15
+        enabled: false
+      jumbotron:
+        weight: 16
+        enabled: false
+      multi_column_container:
+        weight: 17
+        enabled: false
+      video:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

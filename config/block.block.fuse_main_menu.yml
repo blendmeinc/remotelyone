@@ -12,7 +12,7 @@ _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
 id: fuse_main_menu
 theme: fuse
-region: header
+region: meta_header
 weight: -5
 provider: null
 plugin: 'system_menu_block:main'

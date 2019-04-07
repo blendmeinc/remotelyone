@@ -1,0 +1,21 @@
+uuid: 13e8fbae-6287-40f3-b456-98ff2fe7c669
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_jumbotron_cta_name
+    - paragraphs.paragraphs_type.jumbotron
+_core:
+  default_config_hash: IzLGobJ62wpf98ZfD-2zVnDmsZpQ35LYmgUKBA9bNp0
+id: paragraph.jumbotron.field_jumbotron_cta_name
+field_name: field_jumbotron_cta_name
+entity_type: paragraph
+bundle: jumbotron
+label: 'Jumbotron CTA Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

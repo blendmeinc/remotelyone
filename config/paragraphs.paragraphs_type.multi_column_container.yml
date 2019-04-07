@@ -1,0 +1,11 @@
+uuid: c5a83fef-a08f-4a53-8be5-89f7a303af3a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lySnsMI-0tPQ0fLpev7pDzwyZ-XAoTsiips1_Lp_Qjk
+id: multi_column_container
+label: 'Multi Column Container'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

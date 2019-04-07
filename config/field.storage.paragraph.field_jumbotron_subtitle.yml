@@ -1,0 +1,21 @@
+uuid: 9d8c7c6b-f04a-4d14-beac-c56ac2825ea7
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: QmRaP_6JbAjvUkpn8HjrFdYzvBEmDjahoSWUJOdt29o
+id: paragraph.field_jumbotron_subtitle
+field_name: field_jumbotron_subtitle
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

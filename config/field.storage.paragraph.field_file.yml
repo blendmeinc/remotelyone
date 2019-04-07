@@ -1,0 +1,25 @@
+uuid: 16e0fc81-121c-417d-bc33-e71f381e01f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+_core:
+  default_config_hash: 7AdypCFzYyhA1OeV2FICVgMy7pm5Xam3RyMbzWm8S7U
+id: paragraph.field_file
+field_name: field_file
+entity_type: paragraph
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

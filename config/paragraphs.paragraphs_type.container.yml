@@ -1,0 +1,11 @@
+uuid: 1b3a9442-c39e-45ba-bc65-93448ed510a0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DUauKQu-zv5pbZasqNPloY5bpQ7dgkWfH_L4gaI_gzA
+id: container
+label: Container
+icon_uuid: null
+description: null
+behavior_plugins: {  }

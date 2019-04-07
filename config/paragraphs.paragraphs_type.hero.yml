@@ -1,0 +1,11 @@
+uuid: e34611cf-c398-460e-b692-1651cca17791
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: I5Vdmjin3O8HBqboDT6a5KEmmnVkRH0NuDx1BjZQ6QM
+id: hero
+label: Hero
+icon_uuid: null
+description: null
+behavior_plugins: {  }

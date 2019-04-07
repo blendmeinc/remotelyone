@@ -1,0 +1,21 @@
+uuid: 9f1e7aaa-9575-4846-a681-4429f5ba11f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: ztCOkMDhqAXTGeg0sIxjTC6z3SYysvH5bMeUaRLRxGw
+id: paragraph.field_hero_subheader
+field_name: field_hero_subheader
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

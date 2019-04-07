@@ -1,0 +1,24 @@
+uuid: c22f8a9c-859c-4cd7-afef-ac6987aad8e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.body_text.field_body_text
+    - paragraphs.paragraphs_type.body_text
+  module:
+    - text
+_core:
+  default_config_hash: tTyeRZNzV3A5BF-1WZPHZ_t89uTh9BvXl3sGMXVYueQ
+id: paragraph.body_text.default
+targetEntityType: paragraph
+bundle: body_text
+mode: default
+content:
+  field_body_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

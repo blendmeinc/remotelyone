@@ -1,0 +1,71 @@
+uuid: b482d685-1986-4b17-a72b-e8dc610d6f9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_reference
+    - paragraphs.paragraphs_type.body_text
+    - paragraphs.paragraphs_type.container
+    - paragraphs.paragraphs_type.featured_content
+    - paragraphs.paragraphs_type.file
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.jumbotron
+    - paragraphs.paragraphs_type.multi_column_container
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: JZNhqdIOHU11fl6EWRZScvIV9q_4-Queq2oRt5M9SG4
+id: paragraph.container.field_paragraph_reference
+field_name: field_paragraph_reference
+entity_type: paragraph
+bundle: container
+label: 'Paragraph Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      body_text: body_text
+      hero: hero
+      jumbotron: jumbotron
+      video: video
+      multi_column_container: multi_column_container
+      file: file
+      featured_content: featured_content
+      image: image
+    target_bundles_drag_drop:
+      container:
+        weight: 1
+        enabled: false
+      body_text:
+        enabled: true
+        weight: 2
+      hero:
+        enabled: true
+        weight: 3
+      jumbotron:
+        enabled: true
+        weight: 4
+      video:
+        enabled: true
+        weight: 5
+      multi_column_container:
+        enabled: true
+        weight: 6
+      file:
+        enabled: true
+        weight: 7
+      featured_content:
+        enabled: true
+        weight: 8
+      image:
+        enabled: true
+        weight: 9
+field_type: entity_reference_revisions
