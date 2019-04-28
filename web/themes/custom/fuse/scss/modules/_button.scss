@@ -1,0 +1,27 @@
+
+.button {
+    @include breakpoint(small only) {
+        width: 100%;
+    }
+}
+
+.career {
+    .button {
+        @include button-style($ro-career, darken($ro-career, 20%));
+    }
+}
+
+.dating {
+    .button {
+        @include button-style($ro-dating, darken($ro-dating, 20%));
+    }
+}
+
+.friend {
+    .button {
+        @include button-style($ro-friend, darken($ro-friend, 20%));
+    }
+}
+
+
+

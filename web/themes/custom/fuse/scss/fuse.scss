@@ -146,9 +146,10 @@
 // Drupal specific styles (to fix Drupalisms).
 @import 'base/drupal';
 
+
 // Styling for elements.
 // Optional.
-// @import 'base/elements';
+@import 'base/elements';
 
 // Layout
 // Each section of the document has it's own partial seperated out to improve
@@ -161,7 +162,7 @@
 // Modules
 @import 'modules/paragraphs';
 // @import 'modules/block';
-// @import 'modules/button';
+@import 'modules/button';
 
 // States
 // @import 'states/collapse';

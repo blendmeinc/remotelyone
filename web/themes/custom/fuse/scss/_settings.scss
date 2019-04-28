@@ -71,6 +71,10 @@ $ro-orange: #f7a24d;
 $ro-purple: #6464ad;
 $ro-green: #43b449;
 
+$ro-friend: $ro-orange;
+$ro-dating: $ro-purple;
+$ro-career: $ro-blue;
+
 
 // 1. Global
 // ---------
@@ -99,7 +103,7 @@ $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 5px;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;

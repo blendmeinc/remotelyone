@@ -50,7 +50,7 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
-        <div class="featured-content-wrapper">
+        <div class="{{ content.field_connection_type[0] }} featured-content-wrapper">
             <div class="{{ content.field_image_position[0] }} featured-content-image">
                     {{ content.field_image }}
             </div>
