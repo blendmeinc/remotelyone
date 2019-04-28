@@ -5,3 +5,8 @@ global:
       css/fuse.css: {}
   js:
     js/fuse.js: {}
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Karla:400,700': { type: external }
+      '//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css': { type: external }
