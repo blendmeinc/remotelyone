@@ -7,5 +7,5 @@ _core:
 id: container
 label: Container
 icon_uuid: null
-description: null
+description: 'The container type creates a maximum width for other paragraphs to fit inside. The width of this container is usually set to the max width as the page. '
 behavior_plugins: {  }

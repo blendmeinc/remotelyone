@@ -7,5 +7,5 @@ _core:
 id: image
 label: Image
 icon_uuid: null
-description: null
+description: 'An image file you would like to display. There are options for Image captions. '
 behavior_plugins: {  }

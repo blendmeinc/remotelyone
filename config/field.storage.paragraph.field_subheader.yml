@@ -1,16 +1,15 @@
-uuid: d73fc003-d2bb-4871-b069-755cb306d260
+uuid: 37ee4ad6-1a5d-4028-a4cb-2a403cfbf6c6
 langcode: en
 status: true
 dependencies:
   module:
-    - media
     - paragraphs
-id: paragraph.field_image
-field_name: field_image
+id: paragraph.field_subheader
+field_name: field_subheader
 entity_type: paragraph
-type: entity_reference
+type: string_long
 settings:
-  target_type: media
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

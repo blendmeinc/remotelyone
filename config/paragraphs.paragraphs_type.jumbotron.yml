@@ -7,5 +7,5 @@ _core:
 id: jumbotron
 label: Jumbotron
 icon_uuid: null
-description: null
+description: 'The Jumbotron is a large block of text used as emphasis. There is a description field and an optional link field.  The description text field only allows for limited HTML There is a title field that is only used for administrative purposes. '
 behavior_plugins: {  }

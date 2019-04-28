@@ -5,10 +5,9 @@ dependencies:
   config:
     - field.field.paragraph.image.field_image
     - field.field.paragraph.image.field_image_caption
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.image
   module:
-    - image
+    - media_library
 _core:
   default_config_hash: ZilBUyJON1pzZwwAt0GyV5Ie6tmXEYVIk7VjnmFcmRo
 id: paragraph.image.default
@@ -17,12 +16,10 @@ bundle: image
 mode: default
 content:
   field_image:
-    weight: 0
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+    type: media_library_widget
+    weight: 2
+    settings: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   field_image_caption:
     weight: 1

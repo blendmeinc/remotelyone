@@ -1,0 +1,23 @@
+uuid: d5a0c483-f400-46d6-be9d-d950bdde7b74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_featured_content_link
+    - paragraphs.paragraphs_type.featured_content
+  module:
+    - link
+id: paragraph.featured_content.field_featured_content_link
+field_name: field_featured_content_link
+entity_type: paragraph
+bundle: featured_content
+label: 'Featured Content Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

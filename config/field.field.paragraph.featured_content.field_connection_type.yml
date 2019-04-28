@@ -1,0 +1,21 @@
+uuid: a935d400-56f6-4ef0-8ca6-3922dd00dd00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_connection_type
+    - paragraphs.paragraphs_type.featured_content
+  module:
+    - options
+id: paragraph.featured_content.field_connection_type
+field_name: field_connection_type
+entity_type: paragraph
+bundle: featured_content
+label: 'Connection Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

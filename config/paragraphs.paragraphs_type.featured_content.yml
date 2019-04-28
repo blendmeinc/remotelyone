@@ -7,5 +7,5 @@ _core:
 id: featured_content
 label: 'Featured Content'
 icon_uuid: null
-description: ''
+description: 'Featured content explains the services or value propositions that your product provides. The featured content comes with an image field, title, sub-header and an optional view link button. Options are available align the image to the left or right of text. '
 behavior_plugins: {  }

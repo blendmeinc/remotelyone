@@ -7,5 +7,5 @@ _core:
 id: body_text
 label: 'Body Text'
 icon_uuid: null
-description: null
+description: 'Body text is the general text field used to write formatted sentences and long form text. This field allows for simple font styling such as bold, lists, headers and links. Font colors and sizes are not permitted. '
 behavior_plugins: {  }

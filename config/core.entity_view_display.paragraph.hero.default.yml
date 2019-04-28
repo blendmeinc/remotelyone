@@ -3,16 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.hero.field_hero_bg_image
     - field.field.paragraph.hero.field_hero_image
     - field.field.paragraph.hero.field_hero_link
     - field.field.paragraph.hero.field_hero_subheader
     - field.field.paragraph.hero.field_hero_title
     - paragraphs.paragraphs_type.hero
-    - responsive_image.styles.large_background_image
     - responsive_image.styles.wide
   module:
-    - bg_img_field
     - layout_builder
     - link
     - responsive_image
@@ -26,15 +23,6 @@ targetEntityType: paragraph
 bundle: hero
 mode: default
 content:
-  field_hero_bg_image:
-    weight: 0
-    label: above
-    settings:
-      responsive_image_style: large_background_image
-      image_link: ''
-    third_party_settings: {  }
-    type: bg_img_field_formatter
-    region: content
   field_hero_image:
     type: responsive_image
     weight: 1

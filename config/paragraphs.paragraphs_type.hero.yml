@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: I5Vdmjin3O8HBqboDT6a5KEmmnVkRH0NuDx1BjZQ6QM
 id: hero
-label: Hero
+label: 'Hero - Full Width'
 icon_uuid: null
-description: null
+description: 'Full width hero, that contains a full-width background image, title, sub-header text and a button for a call to action. This Hero full width is generally used at the top of the page, provides a value proposition and then a call to action to visit a specific page. '
 behavior_plugins: {  }

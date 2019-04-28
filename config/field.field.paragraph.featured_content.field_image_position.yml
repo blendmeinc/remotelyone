@@ -1,0 +1,23 @@
+uuid: 9a43a62b-0d77-4259-839e-e5261496caba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_position
+    - paragraphs.paragraphs_type.featured_content
+  module:
+    - options
+id: paragraph.featured_content.field_image_position
+field_name: field_image_position
+entity_type: paragraph
+bundle: featured_content
+label: 'Image Position'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

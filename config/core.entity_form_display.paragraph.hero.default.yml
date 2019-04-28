@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.hero.field_hero_bg_image
     - field.field.paragraph.hero.field_hero_image
     - field.field.paragraph.hero.field_hero_link
     - field.field.paragraph.hero.field_hero_subheader
@@ -11,7 +10,6 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.hero
   module:
-    - bg_img_field
     - image
     - link
 _core:
@@ -21,19 +19,6 @@ targetEntityType: paragraph
 bundle: hero
 mode: default
 content:
-  field_hero_bg_image:
-    weight: 4
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-      css_settings:
-        css_selector: ''
-        css_repeat: inherit
-        css_background_size: inherit
-        css_background_position: inherit
-    third_party_settings: {  }
-    type: bg_img_field_widget
-    region: content
   field_hero_image:
     type: image_image
     weight: 1

@@ -1,0 +1,30 @@
+uuid: 483e4e86-e598-4e1e-b5f6-20bff453c776
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_connection_type
+field_name: field_connection_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: friend
+      label: Friend
+    -
+      value: dating
+      label: Dating
+    -
+      value: career
+      label: Career
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
