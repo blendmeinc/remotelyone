@@ -2,4 +2,8 @@
     img {
         max-width: 15rem;
     }
+
+    h2 {
+        @extend h4;
+    }
 }
