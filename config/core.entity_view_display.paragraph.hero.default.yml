@@ -25,7 +25,7 @@ mode: default
 content:
   field_hero_image:
     type: responsive_image
-    weight: 1
+    weight: 3
     region: content
     label: hidden
     settings:
@@ -34,7 +34,7 @@ content:
     third_party_settings: {  }
   field_hero_link:
     type: link
-    weight: 4
+    weight: 2
     region: content
     label: hidden
     settings:
@@ -46,14 +46,14 @@ content:
     third_party_settings: {  }
   field_hero_subheader:
     type: basic_string
-    weight: 3
+    weight: 1
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_hero_title:
     type: string
-    weight: 2
+    weight: 0
     region: content
     label: hidden
     settings:
