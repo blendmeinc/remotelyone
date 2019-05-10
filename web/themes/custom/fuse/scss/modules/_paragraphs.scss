@@ -117,14 +117,18 @@
 
 // End of Full Width Hero // 
 
-// Our Connection Process
+// Our Connection Process//
 .paragraph--item-23 {
     text-align: center;
 }
 
-
+// Titles from each connection block //
 .paragraph--item-21 {
     h2 {
         @extend h4; 
     }
 }
+// H2 Title //
+.paragraph--item-22 {
+    margin: 2rem 0rem;
+  }
