@@ -56,26 +56,52 @@
 //Full Width Hero Paragraph // 
 //
 
-.hero-text-wrapper {
-    position: absolute;
-    top: 12rem;
+.paragraph--type--hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
     text-align: center;
+    .row {
+        position: relative;
+        @include breakpoint (small only) {
+            height: 7rem;;
+        }
+    }
 }
 
 
-.field-paragraph--field-hero-title {
-    position: relative;
-    font-size: 3rem;
-    max-width: 75%;
-    line-height: 3rem; 
+.hero-text-wrapper {
+
+    @include breakpoint (medium) {
+        position: absolute;
+        top: 5rem;
+
+    }
+    
+}
+
+
+.field-paragraph--field-hero-title { 
+    font-size: 1.75rem;
     margin: 0rem auto;
+
+    @include breakpoint (medium) {
+        font-size: 3rem;
+        max-width: 75%;
+        line-height: 3rem;
+        
+    }
 }
 
-.field-paragraph--field-hero-subheader{
-    position: relative;
-    font-size: 1.5rem;
-    max-width: 34rem;
-    margin: 2rem auto;
+.field-paragraph--field-hero-subheader {
+    
+
+    @include breakpoint (medium) {
+        font-size: 1.5rem;
+        margin: 2rem auto;
+        max-width: 50%;
+        
+    }
 }
 
 .field-paragraph--field-hero-link {

@@ -49,7 +49,6 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content.field_hero_image }}
       <div class="row">
           <div class="hero-text-wrapper">
 
@@ -60,6 +59,7 @@
               {{ content.field_hero_link }}
           </div>
       </div>
+      {{ content.field_hero_image }}
     {% endblock %}
   </div>
 {% endblock paragraph %}
