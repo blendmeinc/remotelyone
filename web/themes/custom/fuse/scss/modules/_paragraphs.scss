@@ -120,5 +120,11 @@
 // Our Connection Process
 .paragraph--item-23 {
     text-align: center;
+}
 
+
+.paragraph--item-21 {
+    h2 {
+        @extend h4; 
+    }
 }
