@@ -1,0 +1,42 @@
+uuid: 59198dd4-2951-476b-8f76-3782ddc340e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_blocks
+    - field.field.block_content.pricing_blocks.body
+    - field.field.block_content.pricing_blocks.field_pricing_apply
+  module:
+    - link
+    - text
+id: block_content.pricing_blocks.default
+targetEntityType: block_content
+bundle: pricing_blocks
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pricing_apply:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: b83be8d5-6dca-4607-84e0-dc2b3d349ac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_select_block
+    - paragraphs.paragraphs_type.block_reference
+  module:
+    - block_field
+id: paragraph.block_reference.field_select_block
+field_name: field_select_block
+entity_type: paragraph
+bundle: block_reference
+label: 'Select Block'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field

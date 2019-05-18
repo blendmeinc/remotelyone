@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.featured_content.field_classy_field
     - field.field.paragraph.featured_content.field_connection_type
     - field.field.paragraph.featured_content.field_featured_content_link
     - field.field.paragraph.featured_content.field_featured_content_title
@@ -17,6 +18,12 @@ targetEntityType: paragraph
 bundle: featured_content
 mode: default
 content:
+  field_classy_field:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_connection_type:
     weight: 5
     settings: {  }

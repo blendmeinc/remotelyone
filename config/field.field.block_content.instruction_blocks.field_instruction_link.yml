@@ -1,0 +1,23 @@
+uuid: fff184de-61a5-459a-95e8-f1e4dc007c51
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.instruction_blocks
+    - field.storage.block_content.field_instruction_link
+  module:
+    - link
+id: block_content.instruction_blocks.field_instruction_link
+field_name: field_instruction_link
+entity_type: block_content
+bundle: instruction_blocks
+label: 'Instruction Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

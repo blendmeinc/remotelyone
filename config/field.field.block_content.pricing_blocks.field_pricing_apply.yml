@@ -1,0 +1,23 @@
+uuid: 18d7ca0b-0e8d-4896-964b-1d9f98b1e84f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_blocks
+    - field.storage.block_content.field_pricing_apply
+  module:
+    - link
+id: block_content.pricing_blocks.field_pricing_apply
+field_name: field_pricing_apply
+entity_type: block_content
+bundle: pricing_blocks
+label: 'Pricing Apply'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

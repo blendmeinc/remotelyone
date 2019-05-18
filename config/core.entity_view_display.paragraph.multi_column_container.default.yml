@@ -1,0 +1,24 @@
+uuid: 7f584569-1029-4d6e-bb0d-ecb1d5c23448
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.multi_column_container.field_paragraph_reference
+    - paragraphs.paragraphs_type.multi_column_container
+  module:
+    - entity_reference_revisions
+id: paragraph.multi_column_container.default
+targetEntityType: paragraph
+bundle: multi_column_container
+mode: default
+content:
+  field_paragraph_reference:
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: 684ae198-48e3-40a8-b2a0-ee2f5f9ae55e
+langcode: en
+status: true
+dependencies: {  }
+id: block_reference
+label: 'Block Reference'
+icon_uuid: null
+description: 'Add reusable blocks by referencing them. '
+behavior_plugins: {  }

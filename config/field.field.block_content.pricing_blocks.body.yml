@@ -1,0 +1,22 @@
+uuid: 7cfe5cda-d334-4cf9-bcf1-69fdade70d90
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_blocks
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.pricing_blocks.body
+field_name: body
+entity_type: block_content
+bundle: pricing_blocks
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

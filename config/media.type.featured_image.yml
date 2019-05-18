@@ -1,0 +1,13 @@
+uuid: ef602b20-a7a7-4a8d-87a1-2daee4e14c16
+langcode: en
+status: true
+dependencies: {  }
+id: featured_image
+label: 'Featured Image'
+description: 'The featured image is used for header images that are shown in the teaser views and when sharing content in blogs and social networks. '
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

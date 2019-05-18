@@ -1,0 +1,8 @@
+uuid: 25b9d7a9-430c-4b71-934d-254132308b0a
+langcode: en
+status: true
+dependencies: {  }
+id: instruction_blocks
+label: 'Instruction Blocks'
+revision: 0
+description: 'Provides instructions on how to do something. Contains an image, title, body and optional link field. '

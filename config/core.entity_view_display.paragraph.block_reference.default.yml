@@ -1,0 +1,26 @@
+uuid: b41f5022-6747-4059-a77e-ef1d1b06368e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block_reference.field_select_block
+    - paragraphs.paragraphs_type.block_reference
+  module:
+    - block_field
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: paragraph.block_reference.default
+targetEntityType: paragraph
+bundle: block_reference
+mode: default
+content:
+  field_select_block:
+    weight: 0
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+hidden: {  }

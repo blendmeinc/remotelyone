@@ -1,0 +1,28 @@
+uuid: 356f98ac-ac81-4e05-93b4-b32cde04d67b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.instruction_blocks
+    - field.storage.block_content.field_instruction_image
+    - media.type.image
+id: block_content.instruction_blocks.field_instruction_image
+field_name: field_instruction_image
+entity_type: block_content
+bundle: instruction_blocks
+label: 'Instruction Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

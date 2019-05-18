@@ -1,0 +1,8 @@
+uuid: 9683de58-4999-42e0-b4b2-dd997a525aac
+langcode: en
+status: true
+dependencies: {  }
+id: pricing_blocks
+label: 'Pricing Blocks'
+revision: 0
+description: 'Used for showing the pricing of our different products services. Contains an image, title, body and link field. '

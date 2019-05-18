@@ -1,0 +1,56 @@
+uuid: faa4ea44-0b82-4a7a-ad1b-84267b92d8fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_ref
+    - node.type.article
+  module:
+    - entity_reference_revisions
+id: node.article.field_paragraph_ref
+field_name: field_paragraph_ref
+entity_type: node
+bundle: article
+label: 'Add Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      block_reference:
+        weight: 11
+        enabled: false
+      body_text:
+        weight: 12
+        enabled: false
+      container:
+        weight: 13
+        enabled: false
+      featured_content:
+        weight: 14
+        enabled: false
+      file:
+        weight: 15
+        enabled: false
+      hero:
+        weight: 16
+        enabled: false
+      image:
+        weight: 17
+        enabled: false
+      jumbotron:
+        weight: 18
+        enabled: false
+      multi_column_container:
+        weight: 19
+        enabled: false
+      video:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions
