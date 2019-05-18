@@ -1,0 +1,26 @@
+uuid: d8bf26be-5e81-4041-8693-24b143f8800f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - fuse
+id: poweredbydrupal
+theme: fuse
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

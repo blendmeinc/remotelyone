@@ -1,2 +1,18 @@
 // @file
 // Place your mixins here. Feel free to roll your own mixins.
+
+@mixin read-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 740px; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@mixin caption {
+    font-size: $small-font-size;
+    background: $light-gray;
+    text-align: center;
+    font-style: italic; 
+    padding: 0.75rem;
+}

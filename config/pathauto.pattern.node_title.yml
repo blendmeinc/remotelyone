@@ -9,15 +9,16 @@ label: 'Node Title'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  bb474e1d-31d6-4336-90a6-f1ba55cea6c8:
+  ad3a88ef-3918-4314-9a49-f65e5b8c1b7d:
     id: node_type
     bundles:
+      article: article
       landing_page: landing_page
       page: page
     negate: false
     context_mapping:
       node: node
-    uuid: bb474e1d-31d6-4336-90a6-f1ba55cea6c8
+    uuid: ad3a88ef-3918-4314-9a49-f65e5b8c1b7d
 selection_logic: and
 weight: -5
 relationships: {  }

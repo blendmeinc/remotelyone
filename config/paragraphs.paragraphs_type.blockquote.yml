@@ -1,0 +1,9 @@
+uuid: cc33ac56-f682-4098-a202-fb59ba8c6bc3
+langcode: en
+status: true
+dependencies: {  }
+id: blockquote
+label: Blockquote
+icon_uuid: null
+description: 'Quote a section with from the article, creates an emphasis with and larger text. '
+behavior_plugins: {  }

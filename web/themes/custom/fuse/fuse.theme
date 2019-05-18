@@ -36,6 +36,40 @@ function fuse_preprocess_node(&$variables) {
  * Add convenience variables and template suggestions
  */
 function fuse_preprocess_page(&$variables) {
+
+    // Convenience variables
+  if (isset($variables['page']['sidebar_first'])) {
+    $left = $variables['page']['sidebar_first'];
+  }
+  if (isset($variables['page']['sidebar_second'])) {
+    $right = $variables['page']['sidebar_second'];
+  }
+
+  // Dynamic sidebars
+  if (!empty($left) && !empty($right)) {
+    $variables['main_grid'] = 'medium-7 medium-push-2';
+    $variables['sidebar_first_grid'] = 'medium-2 medium-pull-7';
+    $variables['sidebar_sec_grid'] = 'medium-3';
+  }
+  elseif (empty($left) && !empty($right)) {
+    $variables['main_grid'] = 'medium-9';
+    $variables['sidebar_first_grid'] = '';
+    $variables['sidebar_sec_grid'] = 'medium-3';
+  }
+  elseif (!empty($left) && empty($right)) {
+    $variables['main_grid'] = 'medium-9 medium-push-3';
+    $variables['sidebar_first_grid'] = 'medium-3 medium-pull-9';
+    $variables['sidebar_sec_grid'] = '';
+  }
+  else {
+    $variables['main_grid'] = 'large-12';
+    $variables['sidebar_first_grid'] = '';
+    $variables['sidebar_sec_grid'] = '';
+  }
+
+
+
+
 }
 
 /**

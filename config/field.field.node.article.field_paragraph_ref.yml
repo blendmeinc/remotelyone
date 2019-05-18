@@ -5,6 +5,10 @@ dependencies:
   config:
     - field.storage.node.field_paragraph_ref
     - node.type.article
+    - paragraphs.paragraphs_type.container
+    - paragraphs.paragraphs_type.featured_content
+    - paragraphs.paragraphs_type.file
+    - paragraphs.paragraphs_type.hero
   module:
     - entity_reference_revisions
 id: node.article.field_paragraph_ref
@@ -20,37 +24,44 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
-    target_bundles: null
+    negate: 1
+    target_bundles:
+      container: container
+      featured_content: featured_content
+      file: file
+      hero: hero
     target_bundles_drag_drop:
-      block_reference:
-        weight: 11
-        enabled: false
       body_text:
-        weight: 12
-        enabled: false
-      container:
-        weight: 13
-        enabled: false
-      featured_content:
-        weight: 14
-        enabled: false
-      file:
-        weight: 15
-        enabled: false
-      hero:
-        weight: 16
+        weight: -23
         enabled: false
       image:
-        weight: 17
+        weight: -22
         enabled: false
-      jumbotron:
-        weight: 18
+      blockquote:
+        weight: -21
+        enabled: false
+      block_reference:
+        weight: -20
         enabled: false
       multi_column_container:
-        weight: 19
+        weight: -19
+        enabled: false
+      container:
+        enabled: true
+        weight: -18
+      featured_content:
+        enabled: true
+        weight: -17
+      file:
+        enabled: true
+        weight: -16
+      hero:
+        enabled: true
+        weight: -15
+      jumbotron:
+        weight: -14
         enabled: false
       video:
-        weight: 20
+        weight: -13
         enabled: false
 field_type: entity_reference_revisions

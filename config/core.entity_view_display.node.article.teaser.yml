@@ -5,12 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
+    - field.field.node.article.field_header_image
     - field.field.node.article.field_paragraph_ref
     - field.field.node.article.field_tags
     - node.type.article
   module:
     - layout_builder
-    - text
     - user
 third_party_settings:
   layout_builder:
@@ -22,12 +22,14 @@ targetEntityType: node
 bundle: article
 mode: teaser
 content:
-  body:
-    type: text_default
+  field_header_image:
+    type: entity_reference_entity_view
     weight: 0
     region: content
     label: hidden
-    settings: {  }
+    settings:
+      link: true
+      view_mode: default
     third_party_settings: {  }
   field_tags:
     type: entity_reference_label
@@ -36,11 +38,12 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    label: above
+    label: inline
   links:
     weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   field_paragraph_ref: true

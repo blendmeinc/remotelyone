@@ -1,132 +1,39 @@
 uuid: 00eec3f9-e814-4640-b9e3-877d0da13e61
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_paragraph_ref
     - node.type.landing_page
-    - views.view.content_recent
   module:
+    - entity_reference_revisions
     - layout_builder
-    - layout_discovery
-    - text
     - user
-    - views
 third_party_settings:
   layout_builder:
-    sections:
-      -
-        layout_id: layout_twocol
-        layout_settings: {  }
-        components:
-          c471216f-b846-4d50-b05a-3d19cd06df55:
-            uuid: c471216f-b846-4d50-b05a-3d19cd06df55
-            region: first
-            configuration:
-              id: 'views_block:content_recent-block_1'
-              label: ''
-              provider: views
-              label_display: visible
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional: {  }
-            weight: 0
-          6519fdb1-17ef-4cfe-8e53-e1573ce1e86d:
-            uuid: 6519fdb1-17ef-4cfe-8e53-e1573ce1e86d
-            region: second
-            configuration:
-              id: 'field_block:node:landing_page:uid'
-              label: 'Authored by'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
-          fbf87454-4bbf-4382-b0ca-8f378f7893a8:
-            uuid: fbf87454-4bbf-4382-b0ca-8f378f7893a8
-            region: second
-            configuration:
-              id: 'views_block:content_recent-block_1'
-              label: ''
-              provider: views
-              label_display: visible
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional: {  }
-            weight: 1
-          8984a626-6e53-43e6-8f06-9900bcd9026e:
-            uuid: 8984a626-6e53-43e6-8f06-9900bcd9026e
-            region: bottom
-            configuration:
-              id: 'field_block:node:landing_page:body'
-              label: Body
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
-      -
-        layout_id: layout_onecol
-        layout_settings: {  }
-        components:
-          794a5f28-142f-4683-a503-91caaa9ee9a9:
-            uuid: 794a5f28-142f-4683-a503-91caaa9ee9a9
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:landing_page:links'
-            additional: {  }
-            weight: 0
-          7fd6b48e-bceb-47e3-85df-a3807610e6de:
-            uuid: 7fd6b48e-bceb-47e3-85df-a3807610e6de
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:landing_page:body'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-            additional: {  }
-            weight: 1
+    sections: {  }
     allow_custom: false
-    enabled: true
+    enabled: false
 id: node.landing_page.full
 targetEntityType: node
 bundle: landing_page
 mode: full
 content:
-  body:
+  field_paragraph_ref:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
     label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    region: content
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  body: true

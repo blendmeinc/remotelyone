@@ -1,0 +1,26 @@
+uuid: 683d11a5-3f94-4548-ba1c-59f22863413d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blockquote.field_blockquote
+    - paragraphs.paragraphs_type.blockquote
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: paragraph.blockquote.default
+targetEntityType: paragraph
+bundle: blockquote
+mode: default
+content:
+  field_blockquote:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }
