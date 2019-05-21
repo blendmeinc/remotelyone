@@ -8,4 +8,15 @@
 
 .field-name-field-header-image {
     margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.block-views-block-user-authored-by-block-1 {
+    .views-field-user-picture {
+        text-align: center;
+        img {
+            border-radius: 50%;
+            max-width: 10rem;
+        }
+    }
 }
