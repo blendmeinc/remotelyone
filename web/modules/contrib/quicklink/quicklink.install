@@ -23,7 +23,7 @@ function quicklink_update_8501() {
   $old_config = $config_factory->getEditable('quicklink.quicklinkconfig');
   $new_config = $config_factory->getEditable('quicklink.settings');
   $new_config
-    ->set('no_load_when_authenticated',$old_config->get('prefetch_for_anonymous_users_onl'))
+    ->set('no_load_when_authenticated', $old_config->get('prefetch_for_anonymous_users_onl'))
     ->set('selector', $old_config->get('selector'))
     ->set('url_patterns_to_ignore', $old_config->get('url_patterns_to_ignore'))
     ->set('ignore_admin_paths', $old_config->get('ignore_admin_paths'))
@@ -32,6 +32,7 @@ function quicklink_update_8501() {
     ->set('ignore_file_ext', $old_config->get('ignore_file_ext'))
     ->set('allowed_domains', $old_config->get('allowed_domains'))
     ->set('load_polyfill', $old_config->get('load_polyfill'))
+    ->set('no_load_when_session', $old_config->get('ignore_prefetch_session'))
     ->save();
 
   $old_config->delete();

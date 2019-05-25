@@ -1,9 +1,9 @@
-'use strict';
-
 (function () {
-  Drupal.behaviors.quicklink = {
-    'attach': function attachQuicklink(context, settings) {
 
+  'use strict';
+
+  Drupal.behaviors.quicklink = {
+    attach: function attachQuicklink(context, settings) {
       var debug = settings.quicklink.debug;
 
       function hydrateQuicklinkConfig() {
@@ -11,7 +11,6 @@
         settings.quicklink.ignoredSelectorsLog = settings.quicklink.ignoredSelectorsLog || [];
 
         var quicklinkConfig = settings.quicklink.quicklinkConfig;
-        var ignoredSelectorsLog = settings.quicklink.ignoredSelectorsLog;
 
         quicklinkConfig.ignores = [];
 
@@ -19,9 +18,9 @@
         for (var i = 0; i < settings.quicklink.url_patterns_to_ignore.length; i++) {
           var pattern = settings.quicklink.url_patterns_to_ignore[i];
 
-          (function(i, pattern) {
+          (function (i, pattern) {
             if (pattern.length) {
-              quicklinkConfig.ignores.push(function(uri, elem) {
+              quicklinkConfig.ignores.push(function (uri, elem) {
                 var ruleName = 'Pattern found in href. See ignored selectors log.';
                 var ruleFunc = uri.includes(pattern);
 
@@ -34,9 +33,11 @@
         }
 
         if (settings.quicklink.ignore_admin_paths) {
+          var adminLinkContainerPatterns = settings.quicklink.admin_link_container_patterns.join();
+
           quicklinkConfig.ignores.push(function (uri, elem) {
             var ruleName = 'Exists in admin element container.';
-            var ruleFunc = elem.matches('#block-local-tasks-block a, .block-local-tasks-block a, #drupal-off-canvas a, #toolbar-administration a');
+            var ruleFunc = elem.matches(adminLinkContainerPatterns);
 
             outputDebugInfo(ruleFunc, ruleName, uri, elem);
 
@@ -67,7 +68,7 @@
         if (settings.quicklink.ignore_file_ext) {
           quicklinkConfig.ignores.push(function (uri, elem) {
             var ruleName = 'Contains file extension at end of href.';
-            var ruleFunc = uri.match(/\.[^\/]{1,4}$/);
+            var ruleFunc = uri.match(/(\.[^\/]{1,5}\?)|(\.[^\/]{1,5}$)/);
 
             outputDebugInfo(ruleFunc, ruleName, uri, elem);
 
@@ -75,7 +76,7 @@
           });
         }
 
-        quicklinkConfig.ignores.push(function(uri, elem) {
+        quicklinkConfig.ignores.push(function (uri, elem) {
           var ruleName = 'Contains noprefetch attribute.';
           var ruleFunc = elem.hasAttribute('noprefetch');
 
@@ -84,7 +85,7 @@
           return ruleFunc;
         });
 
-        quicklinkConfig.ignores.push(function(uri, elem) {
+        quicklinkConfig.ignores.push(function (uri, elem) {
           var ruleName = 'Contains download attribute.';
           var ruleFunc = elem.hasAttribute('download');
 
@@ -101,7 +102,7 @@
         if (debug && ruleFunc) {
           var debugMessage = ruleName + ' Link ignored.';
           var thisLog = {};
-          var pattern = pattern || false;
+          var urlPattern = pattern || false;
 
           elem.classList.add('quicklink-ignore');
           elem.textContent += '🚫';
@@ -112,9 +113,11 @@
           thisLog.elem = elem;
           thisLog.message = debugMessage;
 
-          if (pattern) thisLog.pattern = pattern;
+          if (urlPattern) {
+            thisLog.urlPattern = urlPattern;
+          }
 
-          (function(thisLog) {
+          (function (thisLog) {
             settings.quicklink.ignoredSelectorsLog.push(thisLog);
           })(thisLog);
         }
@@ -122,26 +125,31 @@
 
       function loadQuicklink() {
         var urlParams = new URLSearchParams(window.location.search);
-        var noprefetch = urlParams.get('noprefetch') !== null;
+        var noprefetch = urlParams.get('noprefetch') !== null || window.location.hash === '#noprefetch' ;
 
         if (noprefetch && debug) {
-          console.info('The "noprefetch" parameter exists in the URL querystring. Quicklink library not loaded.');
+          // eslint-disable-next-line no-console
+          console.info('The "noprefetch" parameter or hash exists in the URL. Quicklink library not loaded.');
         }
 
         return window.quicklink && !noprefetch;
       }
 
-      if (!settings.quicklink.quicklinkConfig) hydrateQuicklinkConfig();
+      if (!settings.quicklink.quicklinkConfig) {
+        hydrateQuicklinkConfig();
+      }
 
       settings.quicklink.quicklinkConfig.el = (settings.quicklink.selector) ? context.querySelector(settings.quicklink.selector) : context;
 
       if (debug) {
-        console.info('Quicklink config object', settings.quicklink.quicklinkConfig);
-        console.info('Quicklink module debug log', settings.quicklink.debug_log);
-        console.info('Quicklink ignored selectors log', settings.quicklink.ignoredSelectorsLog);
+        console.info('Quicklink config object', settings.quicklink.quicklinkConfig); // eslint-disable-line no-console
+        console.info('Quicklink module debug log', settings.quicklink.debug_log); // eslint-disable-line no-console
+        console.info('Quicklink ignored selectors', settings.quicklink.ignoredSelectorsLog); // eslint-disable-line no-console
       }
 
-      if (loadQuicklink()) quicklink(settings.quicklink.quicklinkConfig);
-    },
+      if (loadQuicklink()) {
+        quicklink(settings.quicklink.quicklinkConfig);
+      }
+    }
   };
 })();

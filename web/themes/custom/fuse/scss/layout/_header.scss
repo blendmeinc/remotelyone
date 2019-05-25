@@ -6,13 +6,9 @@
         color: $ro-gray;
     }
     .block-fuse-branding  {
-
-
-        img {
-            max-height: 6rem;
-            display: block;
-            float: left;
-        }
+        float: left;
+        padding: 1rem;
+        width: 16rem;
     }
 
     .block-site-name {

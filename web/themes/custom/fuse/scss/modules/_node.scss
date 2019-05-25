@@ -2,6 +2,8 @@
 //
 //
 
+//Article Node Type 
+//
 .field-node--body {
     margin-bottom: 2rem;
 }
@@ -12,11 +14,17 @@
 }
 
 .block-views-block-user-authored-by-block-1 {
-    .views-field-user-picture {
+
+    .field-user--user-picture {
+        padding: 1rem;
         text-align: center;
         img {
-            border-radius: 50%;
-            max-width: 10rem;
+            
+            width: 10rem;
         }
+    }
+
+    .field-name-realname {
+        @extend .h4;
     }
 }
