@@ -13,7 +13,14 @@
     margin-top: 1rem;
 }
 
+.block-addtoanybuttons {
+    margin-top: 10rem;
+}
+
 .block-views-block-user-authored-by-block-1 {
+    @include breakpoint (large) {
+        margin-top: 6rem;
+    }
 
     .field-user--user-picture {
         padding: 1rem;
