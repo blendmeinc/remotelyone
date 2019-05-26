@@ -10500,21 +10500,6 @@
         }
     },
     {
-        "name": "dinbror/blazy",
-        "version": "1.8.2",
-        "version_normalized": "1.8.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/dinbror/blazy",
-            "reference": "1.8.2"
-        },
-        "type": "drupal-library",
-        "extra": {
-            "installer-name": "blazy"
-        },
-        "installation-source": "source"
-    },
-    {
         "name": "drupal/lazy",
         "version": "2.0.0",
         "version_normalized": "2.0.0.0",
@@ -10929,5 +10914,20 @@
             "source": "https://git.drupalcode.org/project/blazy_blurry_placeholder",
             "issues": "https://drupal.org/project/issues/blazy_blurry_placeholder"
         }
+    },
+    {
+        "name": "dinbror/blazy",
+        "version": "1.8.2",
+        "version_normalized": "1.8.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dinbror/blazy",
+            "reference": "1.8.2"
+        },
+        "type": "drupal-library",
+        "extra": {
+            "installer-name": "blazy"
+        },
+        "installation-source": "source"
     }
 ]
