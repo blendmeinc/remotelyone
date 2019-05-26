@@ -4,7 +4,8 @@
     h2 {
         @extend h3;
     }
-.node-title {
-    font-size: 1rem;
-}
+    .node-title {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
 }

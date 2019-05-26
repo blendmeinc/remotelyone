@@ -84,16 +84,42 @@
     height: 100%;
     width: 100%;
     text-align: center;
+
+    @include breakpoint (medium) {
+        span {
+            font-size: 3.5rem;
+        }
+    }
+    
+
+
     .row {
         position: relative;
         @include breakpoint (small only) {
-            height: 7rem;;
+           
         }
     }
+    .ro-orange {
+        color: $ro-orange;
+    }
+    .ro-purple {
+        color: $ro-purple;
+    }
+    .ro-blue {
+        color: $ro-blue;
+    }
+    
 }
 
 
 .hero-text-wrapper {
+    overflow: hidden;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @include breakpoint (small only) {
+        background: $ro-light-purple;
+    }
 
     @include breakpoint (medium) {
         position: absolute;
@@ -103,6 +129,16 @@
     
 }
 
+.field-paragraph--field-hero-image {
+    background: $ro-light-purple;
+    @include breakpoint (small only) {
+        display: none;
+    }
+    @include breakpoint (medium) {
+        height: 750px;
+    }
+    
+}
 
 .field-paragraph--field-hero-title { 
     font-size: 1.75rem;
@@ -118,12 +154,10 @@
 
 .field-paragraph--field-hero-subheader {
     
-
     @include breakpoint (medium) {
         font-size: 1.5rem;
-        margin: 2rem auto;
+        margin: 1rem auto;
         max-width: 50%;
-        
     }
 }
 
@@ -152,9 +186,7 @@
     }
 }
 // H2 Title //
-.paragraph--item-22 {
-    margin: 2rem 0rem;
-  }
+
 
 
 // Pricing Options 
