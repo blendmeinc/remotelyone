@@ -1,0 +1,64 @@
+uuid: 875a3ae3-f427-4de8-a843-b1e7c7a54dfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.list
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_job_title
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_organization
+    - field.field.user.user.user_picture
+    - image.style.1_1_square_crop
+  module:
+    - image
+    - layout_builder
+    - lazy
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.list
+targetEntityType: user
+bundle: user
+mode: list
+content:
+  field_bio:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  realname:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title_and_organization:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: 1_1_square_crop
+      image_link: content
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+    label: hidden
+hidden:
+  field_first_name: true
+  field_job_title: true
+  field_last_name: true
+  field_organization: true
+  member_for: true

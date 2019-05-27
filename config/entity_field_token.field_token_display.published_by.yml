@@ -1,0 +1,22 @@
+uuid: a6e93f12-057f-4fa6-a0e8-441481418ddf
+langcode: en
+status: true
+dependencies: {  }
+id: published_by
+label: 'Published by'
+entity_type: node
+bundles:
+  article: article
+  page: page
+view_modes:
+  default: default
+  card: card
+  full: full
+  list: list
+  rss: rss
+  search_index: search_index
+  teaser: teaser
+field_type: text_format
+field_value:
+  value: "<span class=\"published-by\">by&nbsp;<a>[node:author:display-name]&nbsp;</a></span>\r\n"
+  format: code_text

@@ -1,0 +1,31 @@
+uuid: e369cd48-b033-4153-9c18-ed8189fdbf1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.article_node
+    - views.view.user_authored_by
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - fuse
+id: views_block__user_authored_by_block_1
+theme: fuse
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:user_authored_by-block_1'
+settings:
+  id: 'views_block:user_authored_by-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: article_node
+    context_mapping: {  }

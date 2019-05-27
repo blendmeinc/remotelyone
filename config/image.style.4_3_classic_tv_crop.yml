@@ -1,0 +1,17 @@
+uuid: 1f8cb30f-ae3e-4099-ab7f-5378e288f9f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.4_3_classic_tv
+  module:
+    - crop
+name: 4_3_classic_tv_crop
+label: '4:3 Classic TV Crop'
+effects:
+  e980f5d2-e498-4635-b2ef-a2fec3db371b:
+    uuid: e980f5d2-e498-4635-b2ef-a2fec3db371b
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 4_3_classic_tv

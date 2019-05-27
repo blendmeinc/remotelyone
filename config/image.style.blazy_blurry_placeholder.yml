@@ -1,0 +1,16 @@
+uuid: 31026b10-c31b-4517-b385-b2ea8542d1f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: blazy_blurry_placeholder
+label: 'Blazy placeholder'
+effects:
+  776ca240-78f6-40fa-94b3-94eaa887172a:
+    uuid: 776ca240-78f6-40fa-94b3-94eaa887172a
+    id: image_effects_resize_percentage
+    weight: 0
+    data:
+      width: '20'
+      height: null

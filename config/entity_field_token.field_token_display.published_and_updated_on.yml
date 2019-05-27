@@ -1,0 +1,15 @@
+uuid: c48655ee-4491-49ed-a33b-a1270102d2c9
+langcode: en
+status: true
+dependencies: {  }
+id: published_and_updated_on
+label: 'Published and Updated On'
+entity_type: node
+bundles:
+  article: article
+view_modes:
+  full: full
+field_type: text_format
+field_value:
+  value: "<div class=\"published-updated-on\"><p><em>Originally Published</em> by [node:author:display-name] on [node:created:long] |&nbsp;<em>Updated On [node:changed:long]</em></p></div>\r\n"
+  format: full_html

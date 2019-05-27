@@ -1,0 +1,8 @@
+uuid: aa662f49-2c51-4d7d-a395-238a5d822858
+langcode: en
+status: true
+dependencies: {  }
+name: 'Code Text'
+format: code_text
+weight: 0
+filters: {  }

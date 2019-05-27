@@ -7,15 +7,13 @@ dependencies:
     - field.field.paragraph.hero.field_hero_link
     - field.field.paragraph.hero.field_hero_subheader
     - field.field.paragraph.hero.field_hero_title
+    - image.style.16_9_widescreen_crop
     - paragraphs.paragraphs_type.hero
-    - responsive_image.styles.wide
   module:
-    - layout_builder
+    - image
+    - lazy
     - link
-    - responsive_image
-third_party_settings:
-  layout_builder:
-    sections: {  }
+    - text
 _core:
   default_config_hash: DYIUBmvh4xh2U-hLmkfUgJEOP33CNkv4ILjoWH4i2T0
 id: paragraph.hero.default
@@ -24,14 +22,16 @@ bundle: hero
 mode: default
 content:
   field_hero_image:
-    type: responsive_image
+    type: image
     weight: 3
     region: content
     label: hidden
     settings:
-      responsive_image_style: wide
+      image_style: 16_9_widescreen_crop
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
   field_hero_link:
     type: link
     weight: 2
@@ -45,18 +45,17 @@ content:
       target: ''
     third_party_settings: {  }
   field_hero_subheader:
-    type: basic_string
     weight: 1
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_hero_title:
-    type: string
-    weight: 0
+    type: text_default
     region: content
+  field_hero_title:
+    weight: 0
     label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
+    type: text_default
+    region: content
 hidden: {  }

@@ -24,7 +24,7 @@ mode: teaser
 content:
   field_header_image:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 1
     region: content
     label: hidden
     settings:
@@ -33,17 +33,23 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_label
-    weight: 1
+    weight: 2
     region: content
     settings:
       link: true
     third_party_settings: {  }
     label: inline
   links:
-    weight: 2
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  reading_time:
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  addtoany: true
   body: true
   field_paragraph_ref: true

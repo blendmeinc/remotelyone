@@ -1,0 +1,17 @@
+uuid: e3e5937b-1a65-42cf-aa0a-62c227d0bc42
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.1_1_square_crop
+  module:
+    - crop
+name: 1_1_square_crop
+label: '1:1 Square Crop'
+effects:
+  dc115d3d-888c-4c4c-9b5d-06dce6ba7268:
+    uuid: dc115d3d-888c-4c4c-9b5d-06dce6ba7268
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 1_1_square_crop

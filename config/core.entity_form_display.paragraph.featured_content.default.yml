@@ -13,6 +13,7 @@ dependencies:
     - paragraphs.paragraphs_type.featured_content
   module:
     - link
+    - media_library
 id: paragraph.featured_content.default
 targetEntityType: paragraph
 bundle: featured_content
@@ -48,12 +49,9 @@ content:
     region: content
   field_image:
     weight: 0
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_image_position:
     weight: 4

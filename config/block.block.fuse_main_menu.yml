@@ -13,7 +13,7 @@ _core:
 id: fuse_main_menu
 theme: fuse
 region: meta_header
-weight: -5
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:
@@ -23,4 +23,5 @@ settings:
   label_display: '0'
   level: 1
   depth: 1
+  expand_all_items: false
 visibility: {  }

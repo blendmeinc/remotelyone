@@ -11,7 +11,9 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access patterns page'
   - 'access site-wide contact form'
+  - 'access user profiles'
   - 'search content'
   - 'use text format restricted_html'
   - 'view media'

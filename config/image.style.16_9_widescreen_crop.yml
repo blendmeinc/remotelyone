@@ -1,0 +1,17 @@
+uuid: 39138d1a-9d27-4256-af32-90c3fc358293
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.16_9_widescreen
+  module:
+    - crop
+name: 16_9_widescreen_crop
+label: '16:9 Widescreen Crop'
+effects:
+  b7bc58b9-adaf-4474-bef7-7e7139350723:
+    uuid: b7bc58b9-adaf-4474-bef7-7e7139350723
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 16_9_widescreen

@@ -1,0 +1,14 @@
+reading_time:
+  submit: 'Save configuration'
+  container:
+    article:
+      is_activated: 1
+    landing_page:
+      is_activated: 0
+    page:
+      is_activated: 0
+  words_per_minute: '195'
+  form_build_id: form-FU25fNKR07HBMb34pbjCNCxUNaiJ2G-eZVQBoVBDdkc
+  form_token: pe2sEjN4QjNUVEQ9aqUA9knxA0iUxCK42biJffvuK3s
+  form_id: reading_time
+  op: 'Save configuration'

@@ -1,0 +1,19 @@
+uuid: 082c5fa4-a437-404e-b6aa-3b447e3fc6bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: article_node
+label: 'Article Node'
+logic: and
+conditions:
+  8b514c61-2069-4c02-b1a0-0f70fa746a1f:
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 8b514c61-2069-4c02-b1a0-0f70fa746a1f
+allow_other_conditions: false

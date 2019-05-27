@@ -1,0 +1,33 @@
+uuid: 0e56bdb5-ea68-4373-929c-400a1f40972f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.svg_image.field_media_svg
+    - media.type.svg_image
+  module:
+    - svg_image_field
+id: media.svg_image.default
+targetEntityType: media
+bundle: svg_image
+mode: default
+content:
+  field_media_svg:
+    weight: 0
+    label: hidden
+    settings:
+      width: null
+      height: null
+      enable_alt: true
+      enable_title: true
+      link: ''
+      inline: false
+      apply_dimensions: false
+    third_party_settings: {  }
+    type: svg_image_field_formatter
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

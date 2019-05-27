@@ -1,0 +1,12 @@
+uuid: a77594f3-33d2-4619-a863-538927e2a654
+langcode: en
+status: true
+dependencies: {  }
+label: '4:3 Classic TV'
+id: 4_3_classic_tv
+description: ''
+aspect_ratio: '4:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

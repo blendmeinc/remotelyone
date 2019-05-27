@@ -1,0 +1,19 @@
+uuid: 8682ec8c-adaf-4d51-bef1-457f5bf2ce09
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - user
+id: user.field_organization
+field_name: field_organization
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

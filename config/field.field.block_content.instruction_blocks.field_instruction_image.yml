@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.instruction_blocks
     - field.storage.block_content.field_instruction_image
     - media.type.image
+    - media.type.svg_image
 id: block_content.instruction_blocks.field_instruction_image
 field_name: field_instruction_image
 entity_type: block_content
@@ -21,8 +22,9 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      svg_image: svg_image
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: image
 field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: e9c46f58-e34a-492b-bcc6-da1232d84953
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - svg_image_field
+third_party_settings:
+  crop:
+    image_field: null
+id: svg_image
+label: 'SVG Image'
+description: 'SVG Image. Security Implications only allow administrators or site editors '
+source: svg
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_svg
+field_map:
+  name: name

@@ -1,0 +1,17 @@
+uuid: 5f3d6073-d109-4bc7-b82f-464bb17fff23
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.21_9_cinemascope
+  module:
+    - crop
+name: 21_9_cinemascope_crop
+label: '21:9 Cinemascope Crop'
+effects:
+  196e2b4d-8416-437d-85f8-8932f72103ee:
+    uuid: 196e2b4d-8416-437d-85f8-8932f72103ee
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 21_9_cinemascope

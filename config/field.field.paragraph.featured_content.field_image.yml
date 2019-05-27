@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_image
     - media.type.image
+    - media.type.svg_image
     - paragraphs.paragraphs_type.featured_content
 id: paragraph.featured_content.field_image
 field_name: field_image
@@ -21,8 +22,9 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      svg_image: svg_image
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: image
 field_type: entity_reference

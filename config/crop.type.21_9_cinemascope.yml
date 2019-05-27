@@ -1,0 +1,12 @@
+uuid: 42b777cd-f230-4573-a9ce-08e2111c8c6a
+langcode: en
+status: true
+dependencies: {  }
+label: '21:9 Cinemascope'
+id: 21_9_cinemascope
+description: ''
+aspect_ratio: '21:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

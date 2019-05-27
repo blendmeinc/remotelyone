@@ -1,0 +1,12 @@
+uuid: 13aae15e-4a91-4216-a132-e07b0d93e194
+langcode: en
+status: true
+dependencies: {  }
+label: '1:1 Square Crop'
+id: 1_1_square_crop
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
