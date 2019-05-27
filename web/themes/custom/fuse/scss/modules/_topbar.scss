@@ -16,17 +16,15 @@
    
 
 .top-bar {
-    background: transparent;
+    
     text-align: center;
 
     ul {
-        background: transparent;
+    
     }
 }
 
 .title-bar {
-    background-color: transparent;
-
     .menu-icon::after {
         color: $ro-gray;
     }
