@@ -487,7 +487,7 @@ $menu-margin: 0;
 $menu-nested-margin: $global-menu-nested-margin;
 $menu-items-padding: $global-menu-padding;
 $menu-simple-margin: 1rem;
-$menu-item-color-active: $white;
+$menu-item-color-active: $ro-gray;
 $menu-item-background-active: get-color(primary);
 $menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
@@ -838,7 +838,7 @@ $titlebar-background: $black;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
-$titlebar-icon-color: $white;
+$titlebar-icon-color: $ro-gray;
 $titlebar-icon-color-hover: $medium-gray;
 $titlebar-icon-spacing: 0.25rem;
 
