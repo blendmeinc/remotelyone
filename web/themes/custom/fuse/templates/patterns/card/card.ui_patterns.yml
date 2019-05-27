@@ -33,4 +33,4 @@ card:
       type: text
       label: URL
       description: The button URL
-      preview: http://google.com
+      preview: google.com

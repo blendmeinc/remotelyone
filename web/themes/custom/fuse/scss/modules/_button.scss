@@ -23,5 +23,14 @@
     }
 }
 
+.more-link  {
+    text-align: center;
+    a {
+        @extend .button;
+        @extend .small;
+        @extend .expanded;
+    }
+}
+
 
 

@@ -1,0 +1,71 @@
+
+.card {
+  margin-bottom: 1rem;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+
+  > :last-child {
+    margin-bottom: 0px;
+  }
+}
+
+
+.card-divider {
+  padding: 1rem; 
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card-image {
+  &:after {
+    box-shadow: -13px -125px 125px -4px rgba(0,0,0,0.85) inset;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.card-section {
+  bottom: 5%;
+  color: $white;
+  position: absolute;
+  padding: 1rem;
+
+  > :last-child {
+    margin-bottom: 0; 
+  } 
+}
+
+
+
+.image-caption {
+  position: relative;
+}
+
+.image-caption .caption {
+  position: absolute;
+  font-size: 11px;
+  background: $black;
+  color: $white;
+  padding: 2px 7px;
+  bottom: 0;
+  opacity: .7;
+}
+
+
+
+.pattern-preview {
+  .card {
+    @include breakpoint (small) {
+      max-width: 400px;
+    }
+  }
+}

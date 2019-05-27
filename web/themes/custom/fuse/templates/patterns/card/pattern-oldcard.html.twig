@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Thumbnail pattern.
+ */
+#}
+
+<a href="{{ url }}">
+  <div class="card">
+        {% if header %}
+        <div class="card-divider">
+            <p>{{ header }}</p>
+        </div>
+        {% endif %}
+         <div class="card-image">{{ image }} </div>
+        <div class="card-section">
+                <h4>{{ title }}</h4>
+                <p>{{ body }}</p>
+                {% if url %}
+                    <p><a href="{{ url }}" class="button">view more</a></p>
+                {% endif %}
+        </div>
+  </div>
+</a>

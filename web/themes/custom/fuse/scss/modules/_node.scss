@@ -4,18 +4,24 @@
 
 //Article Node Type 
 //
-.field-node--body {
-    margin-bottom: 2rem;
+
+.node--type-article {
+
+    .field-node--body {
+        margin-bottom: 2rem;
+    }
+
+    .field-name-field-header-image {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .block-addtoanybuttons {
+        margin-top: 10rem;
+    }
+
 }
 
-.field-name-field-header-image {
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-}
-
-.block-addtoanybuttons {
-    margin-top: 10rem;
-}
 
 .block-views-block-user-authored-by-block-1 {
     @include breakpoint (large) {
