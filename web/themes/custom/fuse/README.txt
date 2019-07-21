@@ -1,13 +1,6 @@
-BUILD A CHILD THEME WITH ZURB FOUNDATION
+FUSE
 ----------------------------------------
-
-The base Foundation theme is designed to be easily extended by its sub-themes.
-You shouldn't modify any of the CSS or PHP files in the zurb_foundation/ folder;
-but instead you should create a sub-theme of zurb_foundation which is located in
-a folder outside of the root zurb_foundation/ folder. The examples below assume
-zurb_foundation and your sub-theme will be installed in themes/,
-but any valid theme directory is acceptable. Read the
-sites/default/default.settings.php for more info.
+Fuse is a Zurb Foundation base theme made for RemotelyOne
 
 This theme does not support IE7. If you need it downgrade to Foundation 2 see
 http://foundation.zurb.com/docs/faq.php or use the script in the starter
