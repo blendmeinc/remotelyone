@@ -2,11 +2,27 @@
     text-indent: -5000px;
     display: none;
     @include breakpoint (medium) {
-        background-image: url(/themes/custom/fuse/images/rologo.svg);
+        background-image: url(/themes/custom/fuse/images/logos/ro-logo.png);
         background-repeat: no-repeat;
-        width: 16rem; 
+        height: 90px;
+        width: 320px; 
+        .section-friends & {
+            background-image: url(/themes/custom/fuse/images/logos/ro-logo-friends.png);
+        }
+
+        .section-date & {
+            background-image: url(/themes/custom/fuse/images/logos/ro-logo-date.png);
+        }
+
+        .section-career & {
+            background-image: url(/themes/custom/fuse/images/logos/ro-logo-career.png);
+        }
+
     }
 }
+
+
+
 
 .top-bar-left {
     @include breakpoint (small only) {
